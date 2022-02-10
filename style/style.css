@@ -1,0 +1,14 @@
+
+/* NavBar Secion */
+.nav{
+    background-color:#505050	;
+    width: 10em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav h2{
+    color: #fff;
+}
