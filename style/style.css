@@ -1,14 +1,96 @@
+/*General */
 
-/* NavBar Secion */
-.nav{
-    background-color:#505050	;
-    width: 10em;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.nav h2{
-    color: #fff;
+.margin {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/*./General */
+
+/* NavBar Secion */
+
+nav .navbar:hover {
+  cursor: pointer;
+}
+
+/* ./NavBar Secion */
+
+/* main Secion */
+.main-doc {
+  display: grid;
+  grid-template-columns: 43% 30%;
+  grid-template-rows: 100px;
+  justify-content: center;
+}
+
+.AuthSection ul li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 2em;
+  margin-left: -30px;
+}
+
+/* ./main Secion */
+/* aside Secion */
+
+aside .nav {
+  width: 103%;
+  height: 55px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  overflow-x: auto;
+}
+
+aside .nav .nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #444444;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+
+aside .nav .nav__link:hover {
+  background-color: #eeeeee;
+}
+
+aside .nav .nav__link--active {
+  color: #009578;
+}
+
+aside .nav .nav__icon {
+  font-size: 18px;
+}
+nav .nav__link img {
+  width: 20px;
+  height: 10px;
+}
+aside hr {
+  margin-left: 10%;
+}
+aside  section {
+  height: 50em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: auto;
+  width: 113%;
+}
+/* ./aside Secion */
+#t1:target #p1
+{
+  display: block;
 }
