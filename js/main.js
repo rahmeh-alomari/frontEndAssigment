@@ -8,7 +8,7 @@
 
         $(this).addClass('current');
         $("#" + tab_id).addClass('current');
-        $('.current').css('animation', 'animation 1s ease-in-out');
+        $('.current').css('animation', 'animation 1s alternate ');
 
 
     })

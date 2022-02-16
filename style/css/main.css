@@ -25,16 +25,10 @@
     display:flex;
     margin-top: 6em;
 }
-
-.right-side {
-    width: 10%;
-    position: fixed;
-    z-index: 1;
-    top: 80px;
-    left: 60%;
-    overflow-x: hidden;
-    padding: 8px 0;
+.back-btn{
+    cursor: pointer;
 }
+
 
 .container .left-side{
     display: inline-block;
@@ -43,7 +37,8 @@
         padding: 0px 10px;
   }
 
-.container .right-side{
+
+  .container .right-side{
     display: inline-block;
     min-width: 27%;
     
@@ -56,17 +51,15 @@
      .tabs .tab-link span{display:block;font-size: 12px;}
 
 		ul.tabs{
-            margin: 0%;
+			margin: 0px;
 			padding: 0px;
 			list-style: none;
-            word-spacing: 20px;
-            background-color:#ededed;
 		}
 		ul.tabs li{
 			background: none;
 			color: #222;
 			display: inline-block;
-			padding: 16px 8px;
+			padding: 6px;
 			cursor: pointer;
                 text-align: center;
 		}
@@ -78,20 +71,23 @@
 		}
 
 		.tab-content{
-			display: none; 
+			display: none;
 			background: #ededed;
-			padding: 15px;
-            overflow-y: scroll;
-           
+			padding: 19px;
+            top: 20%;
 
 		}
 
 		.tab-content.current{
 			display: inherit;
-            max-height: 30em;
-      
-		}
+overflow-y:scroll;
+max-height: 50%;
 
+		}
+  .right-side nav{
+    padding: 5px 20px;
+    background-color:#ededed;
+  }
 
         .links span{display:inline-block;margin-bottom:5px;text-decoration:underline;    margin-top: 5px;}
         .links h3{font-size: 16px;
@@ -107,26 +103,26 @@
 }
 .tab-content .mob-screen{display:none}
 @media screen and (max-width: 768px){
+    .container .left-side {
+        max-width: 80%;
+     
+    }
+    .right-side nav {
+        background-color: #fff; 
+    }
+
     body{
         position:relative;
     }
-    .right-side ,.navbar-container {
-   position: static;
-    }
-    .left-side{
-        display: none;
-         }
-         
-    
 .tab-content.current{
-    height: 100%;
-    width: 100%;
+    max-width: 55em;
     position: absolute;
     background-color: #fff;
-    height: 100%;
-    top: 0;
+    min-height: 110%;
+    top:-7%;
         right: 0px;
             left: 0;
+            z-index: 10;
           
 }
 .tab-content .mob-screen{display:block}
@@ -152,20 +148,13 @@
 
 
 @keyframes animation {
-    0%  {right:900px; top:0px;}
-    100% { right:0px; top:0px;}
+    0%  { left: 40px; top: -100px;}
+ 
+    100% { left: 0px; top: -100px;}
 }
+
 
 
 
 input, button, submit { border:none; } 
 a:active, a:hover{    color: #8b8b8b;}
-
-
-
-
-
-
-
-
-
