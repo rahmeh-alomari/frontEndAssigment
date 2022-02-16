@@ -1,7 +1,6 @@
 /*General */
 
 body {
-  
   font-family: Georgia, serif;
   font-size: 100%;
 }
@@ -10,21 +9,19 @@ body {
   margin-left: 40px;
   margin-top: 10px;
 }
-.paddingright{
+.paddingright {
   padding-right: 2%;
   padding-top: 5%;
-
 }
 
-
-.linehe{
+.linehe {
   line-height: 190%;
 }
 /*./General */
 
 /* NavBar Secion */
 
-nav  {
+nav {
   background-color: #fff;
 }
 
@@ -49,7 +46,6 @@ nav .navbar:hover {
   margin-left: -30px;
 }
 
-
 .AuthSection ul li a {
   padding: 2%;
 }
@@ -69,7 +65,7 @@ aside .nav {
 .tabs .nav__link {
   display: flex;
   flex-direction: column;
- margin: auto;
+  margin: auto;
   flex-grow: 1;
   min-width: 10px;
   overflow: hidden;
@@ -100,7 +96,7 @@ nav .nav__link img {
 aside + section hr {
   margin-left: 10%;
 }
-aside  section {
+aside section {
   height: 50em;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -120,17 +116,17 @@ aside  section {
   line-height: 1.5;
   font-size: 0.9em;
   display: none;
-  background-color:  #E8E8E8;
+  background-color: #e8e8e8;
 }
 
-figure {    padding-top: 6%;
+figure {
+  padding-top: 6%;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 15px;
 }
 
-
-aside label{
+aside label {
   padding-top: 7%;
   margin: auto;
 }
@@ -138,33 +134,26 @@ aside label{
 .tabs__radio:checked + .tabs__label {
   font-weight: bold;
   color: #484848;
- border-bottom: 2px solid #484848;
-
+  border-bottom: 2px solid #484848;
 }
 
 .tabs__radio:checked + .tabs__label + .tabs__content {
   display: initial;
 }
 
-.tabs{
+.tabs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.tabs__label:hover{
+.tabs__label:hover {
   cursor: pointer;
 }
 
-
-
-
- .tabs__label {
-
+.tabs__label {
   line-height: 37px;
- 
 }
-
 
 aside {
   width: 30%;
@@ -176,9 +165,7 @@ aside {
   padding: 8px 0;
 }
 
-
-
-.nn {
+.navbar-container {
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -190,30 +177,139 @@ main {
   margin-top: 3%;
 }
 
-
-
+.breakout-section {
+  display: none;
+}
 
 @media screen and (max-width: 900px) {
+  /* General Secion */
   main section h1 {
- padding-top: 10%;
+    padding-top: 10%;
   }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 700px) {
+  /* General Secion */
+  .body {
+    position: relative;
+  }
+
   main section h1 {
- padding-top: 20%;
-  } 
-  
+    padding-top: 20%;
+  }
+
+  /* ./General Secion */
+
+  /* aside Secion */
+  aside {
+    position: absolute;
+  }
+
   aside label {
     padding-bottom: 5%;
   }
 
-  aside label span , aside  .tabs__content{
-    display: none !important;padding-bottom: 20%;
+  aside label span,
+  aside .tabs__content {
+    display: none !important;
+    padding-bottom: 20%;
   }
+
   .tabs {
     display: flex;
     flex-direction: column;
     margin-left: 34% !important;
-  background-color: #fff !important;
+    background-color: #fff !important;
+    width: 103%;
+    height: 500%;
+    top: 10%;
+    left: -36%;
+  }
+
+  label img:active {
+    background-color: #009578;
+  }
+
+
+
+  /* ./aside Secion */
+
+  /* main Secion */
+
+  .holder {
+    display: none;
+  }
+  .breakout-section {
+    position: absolute;
+    display: block;
+
+    z-index: 2;
+    padding: 1px 20px;
+
+    background-color: white;
+
+    width: 93%;
+    margin-left: -15px;
+    margin-top: -20px;
+    cursor: pointer;
+  }
+  .breakout-input {
+    cursor: pointer;
+    border: none;
+
+    background-color: white;
+    font-size: 20px;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+
+  .first-one {
+    display: block !important;
+  }
+
+  .first-one11 {
+    display: grid !important;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -750px;
+  }
+  body > main > section > aside > label {
+    display: none;
+  }
+
+  .third {
+    margin-left: 0% !important;
+    background-color: #fff !important;
+    width: 10%;
+    height: 20;
+    height: 300%;
+    top: 60px;
+    left: 90%;
+    padding: 0;
+  }
+  /* .breakout-section:hover ~  section aside > label  {
+  display: block
+} */
+  .forth {
+    visibility: hidden;
+    height: 900px;
+  }
+    .tabs__radio:checked ~ section {
+    display: block !important;
+
+    margin-right: 100px;
+    background-color: #fff;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+  }
+  .tabs__radio:checked ~ section::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
 }
-}
+
+/* 
+  /* main Secion */
